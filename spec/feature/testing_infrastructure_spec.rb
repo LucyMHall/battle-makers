@@ -2,11 +2,6 @@ require './app.rb'
 
 describe "Testing Infrastructure", type: :feature do
 
-  xit 'displays text on the homepage' do
-    visit('/')
-    expect(page).to have_content'Testing infrastructure working!'
-  end
-
   it 'gets Player1 and Player2\'s names and displays them'  do
     visit('/')
     @one = "Lucy"
