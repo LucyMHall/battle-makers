@@ -7,12 +7,8 @@ class Player
     @hit_points = 60
   end
 
-
-  def name
-    @name
-  end
-
   def attacked
     @hit_points -= 10
   end
+
 end
