@@ -1,15 +1,13 @@
 require './app.rb'
 
-describe "Testing Infrastructure", type: :feature do
+describe "Homepage", type: :feature do
 
   it 'gets Player1 and Player2\'s names and displays them'  do
-    visit('/')
-    @one = "Lucy"
-    @two = "Carl"
-    fill_in 'Player_1', with: @one
-    fill_in 'Player_2', with: @two
+    visit('/names')
+    fill_in 'Player_1', with: "Lucy"
+    fill_in 'Player_2', with: "Carl"
     click_on 'Submit'
-    expect(page).to have_content 'Player 1: Lucy V Player 2: Carl'
+    expect(page).to have_content 'Lucy Vs Carl'
   end
 
 
