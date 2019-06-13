@@ -1,6 +1,6 @@
 class Game
 
-  attr_reader :player_2_hit_points
+  attr_reader :player_2_hit_points, :player_1, :player_2
 
   def initialize(player_1, player_2)
     @player_1 = player_1
