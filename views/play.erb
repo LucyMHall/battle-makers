@@ -1,2 +1,11 @@
-<%=@name_1%> Vs <%=@name_2%>
+<div>
+  <%=@name_1%> Vs <%=@name_2%>
+</div>
+<div>
 <%=@name_2%> Hit Points: 60
+</div>
+<div>
+<form action="/play" method="post">
+  <button type='submit', value='attack'>Attack Player 2</button>
+</form>
+</div>
