@@ -16,3 +16,11 @@ describe "/play", type: :feature do
     expect(page).to have_content 'Lucy attacked Carl'
   end
 end
+
+describe "/attacked", type: :feature do
+  it 'reduces Player 2 hp by 10' do
+    sign_in_and_play
+    click_on 'attack'
+    expect(page).to have_content 'Carl Hit Points: 50'
+  end
+end
