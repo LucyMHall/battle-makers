@@ -1,0 +1,7 @@
+<h1> <%= @game.attacker.name %> attacked <%= @game.opponent.name %>! &#128078;</h1>
+
+<strong> Now it's <%= @game.opponent.name %>'s time to get their own back! </strong>
+
+<form action="/results" method="post">
+  <button type='submit' name='switch_players'> Switch Players </button>
+</form>

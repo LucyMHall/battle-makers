@@ -1,11 +1,17 @@
 <div>
-  <%= @game.player_1.name %> Vs <%= @game.player_2.name %>
+  <h1><%= @game.player_1.name %> Vs <%= @game.player_2.name %>...the ultimate showdown</h1>
 </div>
 <div>
-<%= @game.player_2.name  %> Hit Points: <%= @game.player_2.hit_points %>
+<strong> <%= @game.player_1.name %>'s Hit Points: </strong><%=@game.player_1.hit_points %>
+<br>
+<strong> <%= @game.player_2.name  %>'s Hit Points: </strong><%= @game.player_2.hit_points %>
+<br>
+<br>
+Player 1 goes first, so <%= @game.player_1.name %> you're up!
+
 </div>
 <div>
-<form action="/attack" method="get">
-  <button type='submit', value='attack'>Attack Player 2</button>
+<form action="/battle" method="get">
+  <button type='submit', value='start game'> Start Game </button>
 </form>
 </div>

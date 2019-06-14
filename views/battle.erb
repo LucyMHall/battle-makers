@@ -1,0 +1,8 @@
+<h1> <%= @game.attacker.name %>'s turn: </h1>
+
+<h2><%= @game.player_1.name %>'s Hit Points: <%= @game.player_1.hit_points %></h2>
+<h2><%= @game.player_2.name %>'s Hit Points: <%= @game.player_2.hit_points %></h2>
+
+<form action="/battle" method="post">
+  <button type='submit' name='attack'>Attack <%= @game.opponent.name %></button>
+</form>
