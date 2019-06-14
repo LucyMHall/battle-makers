@@ -8,7 +8,7 @@ class Player
   end
 
   def attacked
-    @hit_points -= 10
+    @hit_points -= rand(1..30)
   end
 
 end
