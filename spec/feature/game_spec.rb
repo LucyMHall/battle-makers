@@ -2,7 +2,7 @@ require '././lib/game'
 
 describe Game do
   describe 'attack' do
-    it 'calls the attacked method on the player' do
+    xit 'calls the attacked method on the player' do
       player_2 = double('player')
       player_1 = double('player')
       allow(player_2).to receive(:attacked)
